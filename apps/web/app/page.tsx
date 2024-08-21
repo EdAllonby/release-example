@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Button } from "@repo/ui/button";
+import { Button } from "@ed-allonby/ui/button";
 import styles from "./page.module.css";
-
+import { add } from "@ed-allonby/math";
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -14,6 +14,7 @@ export default function Home() {
           height={38}
           priority
         />
+        {add(1, 2)}
         <ol>
           <li>
             Get started by editing <code>app/page.tsx</code>
